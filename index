@@ -1,187 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bia's World ★</title>
+    <title>Cronograma da Bia</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Syne:wght@800&display=swap');
-
-        :root {
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
-            --accent-red: #ff4d4d;
-            --accent-blue: #4d94ff;
-            --text-color: #e0e0e0;
-        }
-
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Space+Grotesk', sans-serif;
-            margin: 0;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
             display: flex;
             justify-content: center;
-            line-height: 1.6;
+            padding: 20px;
         }
-
         .container {
-            max-width: 600px;
+            background-color: white;
             width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-
         header {
             text-align: center;
-            padding: 40px 0;
-            border: 3px dashed var(--accent-red);
-            border-radius: 20px;
-            margin-bottom: 30px;
-            background: linear-gradient(45deg, #1a1a1a, #252525);
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
-
         h1 {
-            font-family: 'Syne', sans-serif;
-            font-size: 3rem;
+            color: #2c3e50;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: -2px;
-            color: white;
+            letter-spacing: 2px;
         }
-
-        .nickname {
-            color: var(--accent-blue);
-            font-weight: bold;
-            font-size: 1.2rem;
+        .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
         }
-
-        .section {
-            background-color: var(--card-bg);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 5px solid var(--accent-blue);
-            transition: transform 0.3s ease;
+        .day-section {
+            margin-bottom: 25px;
         }
-
-        .section:hover {
-            transform: scale(1.02);
-            border-left-color: var(--accent-red);
-        }
-
         h2 {
-            font-family: 'Syne', sans-serif;
-            margin-top: 0;
-            color: var(--accent-red);
-            font-size: 1.5rem;
-            text-transform: lowercase;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #333;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin: 5px;
-            border: 1px solid var(--accent-blue);
-        }
-
-        .color-box {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .swatch {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 2px solid white;
-        }
-
-        .red { background-color: var(--accent-red); }
-        .blue { background-color: var(--accent-blue); }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
+            color: #3498db;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            font-size: 1.2rem;
             margin-bottom: 10px;
         }
-
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #eee;
+            transition: transform 0.2s;
+        }
+        li:hover {
+            transform: translateX(5px);
+            border-color: #3498db;
+        }
+        input[type="checkbox"] {
+            margin-right: 15px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        .category {
+            font-weight: bold;
+            margin-right: 5px;
+        }
         footer {
+            margin-top: 30px;
             text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.6;
-            margin-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .star {
-            color: var(--accent-red);
-        }
-
-        /* Fun decorative elements */
-        .decor {
-            position: fixed;
-            z-index: -1;
-            opacity: 0.1;
-            font-size: 5rem;
+            font-weight: bold;
+            color: #16a085;
+            border-top: 1px dashed #ccc;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>BEATRIZ SENA</h1>
-            <p class="nickname">Bia ★ Luua</p>
-            <p>13 years old • Aries • MG → SP</p>
-        </header>
+<div class="container">
+    <header>
+        <h1>Cronograma da Bia</h1>
+        <p class="subtitle">Organiza o teu tempo e brilha!</p>
+    </header>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I was born in Minas Gerais and lived there until I was 4. Now I live in São Paulo! I have brown hair with blonde highlights and big brown eyes.</p>
-        </div>
-
-        <div class="section">
-            <h2>My Art Journey</h2>
-            <p>I've loved art since I was little. I'm always trying new things:</p>
-            <span class="tag">Drawing</span>
-            <span class="tag">Piano</span>
-            <span class="tag">Origami</span>
-            <span class="tag">Flute</span>
-            <span class="tag">Acoustic Guitar</span>
-            <p><strong>Current Mission:</strong> Learning the electric guitar! 🎸</p>
-        </div>
-
-        <div class="section">
-            <h2>My Favorites</h2>
-            <p>I love red because it matches me, and blue because it's special to me and my friend.</p>
-            <div class="color-box">
-                <div class="swatch red"></div>
-                <div class="swatch blue"></div>
-            </div>
-            <p>I also love <strong>plushies</strong> and creating my own characters!</p>
-        </div>
-
-        <div class="section">
-            <h2>Watch List</h2>
-            <p><strong>Cartoons:</strong> Adventure Time, The Owl House, Gravity Falls, Fionna and Cake, Kid Cosmic.</p>
-            <p><strong>Anime:</strong> Blue Period, The Summer Hikaru Died, Little Witch Academia.</p>
-        </div>
-
-        <div class="section">
-            <h2>My Support System</h2>
-            <p>My family and friends (real and virtual) are everything to me. And my cats are the best—they make me laugh after a long day! 🐾</p>
-        </div>
-
-        <footer>
-            <p>Made with <span class="star">★</span> by Bia</p>
-        </footer>
+    <!-- Segunda-feira -->
+    <div class="day-section">
+        <h2>Segunda-feira</h2>
+        <ul>
+            <li><input type="checkbox"><span class="category">Monitoria:</span> de História</li>
+            <li><input type="checkbox"><span class="category">Tarefa:</span> Ler o livro por 1 hora</li>
+            <li><input type="checkbox"><span class="category">Outros:</span> Pegar a van às 17:00</li>
+            <li><input type="checkbox"><span class="category">Outros:</span> Aikido com o Luciano às 18:30 (ida e volta)</li>
+        </ul>
     </div>
+
+    <!-- Terça-feira -->
+    <div class="day-section">
+        <h2>Terça-feira</h2>
+        <ul>
+            <li><input type="checkbox"><span class="category">Outros:</span> Retorno na van das 17:00</li>
+            <li><input type="checkbox"><span class="category">Tarefa:</span> 40 minutos do livro "As Batalhas do Castelo"</li>
+        </ul>
+    </div>
+
+    <!-- Quarta-feira -->
+    <div class="day-section">
+        <h2>Quarta-feira</h2>
+        <ul>
+            <li><input type="checkbox"><span class="category">Monitoria:</span> Ciências e Alemão</li>
+            <li><input type="checkbox"><span class="category">Tarefa:</span> Ler mais 1 hora do livro "As Batalhas do Castelo"</li>
+            <li><input type="checkbox"><span class="category">Outros:</span> Horário de saída da van às 17h</li>
+        </ul>
+    </div>
+
+    <!-- Quinta-feira -->
+    <div class="day-section">
+        <h2>Quinta-feira</h2>
+        <ul>
+            <li><input type="checkbox"><span class="category">Recuperação:</span> de Produção de Texto</li>
+            <li><input type="checkbox"><span class="category">Tarefa:</span> Adiantar qualquer dever que aparecer para sexta-feira</li>
+            <li><input type="checkbox"><span class="category">Outros:</span> Horário de saída da van às 17h</li>
+        </ul>
+    </div>
+
+    <!-- Sexta-feira -->
+    <div class="day-section">
+        <h2>Sexta-feira</h2>
+        <ul>
+            <li><input type="checkbox"><span class="category">Monitoria:</span> do que quiser :)</li>
+            <li><input type="checkbox"><span class="category">Outros:</span> Horário de saída da van às 15h</li>
+        </ul>
+    </div>
+
+    <footer>
+        "Uma pequena ação todos os dias leva a grandes resultados."
+    </footer>
+</div>
 
 </body>
 </html>
